@@ -8,7 +8,7 @@ $physics = 40;
 $chemistry = 33;
 
 // marks validation function
-function Limit($data, $min = 0, $max = 100)
+function limit($data, $min = 0, $max = 100)
 {
     return $data >= $min && $data <= $max;
 }
@@ -18,7 +18,7 @@ function failMark($data, $mark = 33) {
 }
 
 // marks limitation error
-if (!Limit($bangla) OR !Limit($english) OR !Limit($math) OR !Limit($physics) OR !Limit($chemistry)) {
+if (!limit($bangla) OR !limit($english) OR !limit($math) OR !limit($physics) OR !limit($chemistry)) {
     echo "Invalid Marks! Sorry your marks should be between 0 to 100.";
     die();
 }
