@@ -1,11 +1,11 @@
 <?php 
 
 // five subject marks
-$bangla = 83;
-$english = 80;
-$math = 83;
-$physics = 83;
-$chemistry = 83;
+$bangla = 40;
+$english = 40;
+$math = 40;
+$physics = 40;
+$chemistry = 33;
 
 // marks validation function
 function Limit($data, $min = 0, $max = 100)
@@ -54,19 +54,19 @@ switch ($averageMarks) {
     case ($averageMarks >= 80 && $averageMarks <= 100):
         echo "Grade : A+";
         break;
-    case ($averageMarks >= 70):
+    case ($averageMarks >= 70 && $averageMarks <= 79):
         echo "Grade : A";
         break;
-    case ($averageMarks >= 60):
+    case ($averageMarks >= 60 && $averageMarks <= 69):
         echo "Grade : A-";
         break;
-    case ($averageMarks >= 50):
+    case ($averageMarks >= 50 && $averageMarks <= 59):
         echo "Grade : B";
         break;
-    case ($averageMarks >= 40):
+    case ($averageMarks >= 40 && $averageMarks <= 49):
         echo "Grade : C";
         break;
-    case ($averageMarks >= 33):
+    case ($averageMarks >= 33 && $averageMarks <= 39):
         echo "Grade : D";
         break;
     default:
